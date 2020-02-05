@@ -7,15 +7,15 @@ namespace DoesItBlend
     /// <summary>
     /// A class representing a mango
     /// </summary>
-    public class Mango : Fruit
+    public class Mango : Fruit, IBlendable
     {
         /// <summary>
         /// Blends the mango
         /// </summary>
         /// <returns>The result of blending a mango</returns>
-        public string Blend()
+        public override string Blend()
         {
             return "Orange Oddness";
         }
-    }
+    } 
 }
